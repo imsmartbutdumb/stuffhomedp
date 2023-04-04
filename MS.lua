@@ -1,11 +1,5 @@
 
-local MainSlider = Main:CreateSlider({
-    Name = "Mag Range",
-    Range = {0, 25},
-    Increment = 0.1,
-    Suffix = "",
-    CurrentValue = 18,
-    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+
     Callback = function(maxdistance)
         local lp = game:GetService("Players").LocalPlayer
         local stepped = game:GetService("RunService").Stepped
